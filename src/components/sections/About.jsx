@@ -5,7 +5,9 @@ export const About = () => {
     const frontendSkills = [
         "React",
         "Tailwind",
-        "TypeScript"
+        "TypeScript",
+        "HTML",
+        "CSS",
     ];
 
     const backendSkills = [
@@ -13,7 +15,12 @@ export const About = () => {
         "Django",
         "Flask",
         "AWS",
-        "MongoDB"];
+        "MongoDB",
+        "SQL",
+        "ExpressJs",
+        "NextJs",
+    
+    ];
 
     const [showDetails1, setShowDetails1] = useState(false);
     const [showDetails2, setShowDetails2] = useState(false);
@@ -87,15 +94,19 @@ export const About = () => {
                         <div onClick={() => setShowDetails1((prev) => !prev)} className="hover:text-white">
                             <h4>Software Engineer Intern at KACST (06/2024 – 01/2025) 
                                 
-                                <span className={`${showDetails1 ? "hidden" : ""} ml-1`}>&darr;</span>
+                                <span className={` ml-1 ${showDetails1 ? "hidden" : "" }`}>&darr;</span>
                                 <span className={`${showDetails1 ? "" : "hidden"} ml-1`}>&uarr;</span>
+
                             
                             </h4>
-                            <p className={`${showDetails1 ? "" : "hidden"} mt-2 text-left text-blue-500/95 rounded-r-2xl`}>
-                                <span className="block">• Built a platform using React with integrated data visualization for interactive and user-friendly data analysis. </span>
-                                <span className="block">• Designed and deployed a chatbot to assist users chatting with large language models.</span>
-                                <span className="block">• Collaborated with backend developers using Flask framework to ensure seamless integration between the visualization components and the database.</span>
-                                <span className="block"> • Customized maps based on dynamic data inputs to provide real-time updates</span>
+                            <p className={`mt-2 text-left text-blue-500/95 rounded-r-2xl
+                            transition-all duration-500 ease-in-out transform
+                            ${showDetails1 ? "opacity-100 translate-y-0 block" : "opacity-0 -translate-y-5 hidden"}
+                             `}>
+                                <span className="block p-1">• Built a platform using React with integrated data visualization for interactive and user-friendly data analysis. </span>
+                                <span className="block p-1">• Designed and deployed a chatbot to assist users chatting with large language models.</span>
+                                <span className="block p-1">• Collaborated with backend developers using Flask framework to ensure seamless integration between the visualization components and the database.</span>
+                                <span className="block p-1"> • Customized maps based on dynamic data inputs to provide real-time updates</span>
                             </p>
                         </div>
                     </div>
@@ -109,9 +120,9 @@ export const About = () => {
                             
                             </h4>
                             <p className={`${showDetails2 ? "" : "hidden"} mt-2 text-left text-blue-500/95`}>
-                                <span className="block">• Built an email system to send notifications to users using NodeJS. </span>
-                                <span className="block">• Added features to enhance the website’s functionality using JavaScript.</span>
-                                <span className="block">• Developed SQL functions to improve data processing.</span>
+                                <span className="block p-1">• Built an email system to send notifications to users using NodeJS. </span>
+                                <span className="block p-1">• Added features to enhance the website’s functionality using JavaScript.</span>
+                                <span className="block p-1">• Developed SQL functions to improve data processing.</span>
                             </p>
                         </div>
                     </div>

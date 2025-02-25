@@ -10,8 +10,6 @@ export const Home = () => {
             I'm a Web Developer and Cloud Solution Architect with a Computer Science Bachelor degree.
              I specialize in building dynamic web applications using React and Next.js,
               and designing scalable, secure cloud solutions . 
-              I'm passionate about creating efficient,
-             user-friendly digital experiences and always eager to learn and innovate in the tech space.
             </p>
             <div className="flex justify-center space-x-4 ">
                 <a href="#projects" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">

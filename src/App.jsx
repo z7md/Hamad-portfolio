@@ -15,9 +15,10 @@ function App() {
 
   return (
     <>
+    <div className="">
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <div
-        className={`min-h-screen transition-opacity duration-700 ${
+        className={`min-h-screen transition-opacity duration-700 scroll-smooth ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
       >
@@ -27,6 +28,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+      </div>
       </div>
     </>
   );
