@@ -37,7 +37,7 @@ export const Contact = () => {
                             name="name"
                             require
                             value={formData.name}
-                            className="w-full bg-white/5 border border-white/10 rounded py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                            className="w-full bg-white/5 border border-white/10 rounded px-2 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder="Name..."
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         />
@@ -49,14 +49,14 @@ export const Contact = () => {
                             name="email"
                             require
                             value={formData.email}
-                            className="w-full bg-white/5 border border-white/10 rounded  py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                            className="w-full bg-white/5 border px-2 border-white/10 rounded  py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder="example@gmail.com"
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         />
                     </div>
 
                     <div className="relative">
-                        <textarea id="message" value={formData.message} name="message" rows={5} require className="w-full bg-white/5 border border-white/10 rounded py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                        <textarea id="message" value={formData.message} name="message" rows={5} require className="w-full bg-white/5 border border-white/10 rounded py-3 px-2 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                             placeholder="Your Message here"
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         />
