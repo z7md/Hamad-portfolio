@@ -20,6 +20,8 @@ export const About = () => {
         "ExpressJs",
         "NextJs",
 
+
+        
     ];
 
     const [showDetails1, setShowDetails1] = useState(false);
