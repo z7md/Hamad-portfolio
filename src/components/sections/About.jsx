@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll"
+import { LiaCloudDownloadAltSolid } from "react-icons/lia";
 export const About = () => {
 
     const frontendSkills = [
@@ -21,7 +22,7 @@ export const About = () => {
         "NextJs",
 
 
-        
+
     ];
 
     const [showDetails1, setShowDetails1] = useState(false);
@@ -75,11 +76,11 @@ export const About = () => {
 
                 </div>
 
-                
+
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
 
-                <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
                         <h3 className="text-xl font-bold mb-4">
                             🏫 Education
                         </h3>
@@ -90,7 +91,7 @@ export const About = () => {
                         </ul>
                     </div>
 
-                    
+
                     <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all ">
                         <h3 className="text-xl font-bold mb-4">
                             🏫 Certificates
@@ -98,20 +99,23 @@ export const About = () => {
                         <ul>
 
                             <li className="m-1">
-                                <strong>AWS Web Solution Development Bootcamp</strong> - Tuwaiq
+                                <strong>AWS Web Solution Development Bootcamp</strong> - Tuwaiq 
+                                {/* <span className=''> 
+                                <a href="./images/xx.jpg" download="xx.jpg"> <LiaCloudDownloadAltSolid className="inline-block hover:text-blue-500 text-2xl hover:translate-y-0.5 transition-all"/> </a>
+                                </span>  */}
                             </li>
                             <li className="m-1">
-                                <strong>Meta Front-End Developer Professional Certificate</strong> META
+                                <strong>Meta Front-End Developer Professional Certificate</strong> - META
                             </li>
                         </ul>
                     </div>
-                                        
 
-                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all md:col-span-2 ">
+
+                    <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all md:col-span-2 text-left">
                         <h3 className="text-xl font-bold mb-4">
                             💼  Work Experience
                         </h3>
-                        <div className="rounded-2xl space-y-4 text-gray-300 p-1 ">
+                        <div className="rounded-2xl space-y-4 text-gray-300 p-1 text-left">
                             <div onClick={() => setShowDetails1((prev) => !prev)} className="hover:text-white">
                                 <h4>Software Engineer Intern at KACST (06/2024 – 01/2025)
 

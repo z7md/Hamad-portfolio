@@ -64,7 +64,7 @@ export const Projects = () => {
                             ))}
                         </div>
                         <div className="flex justify-between items-center">
-                            <a href="https://github.com/z7md/balot" className="text-blue-400 hover:text-blue-300 transition-colors my-4 " target="_blank" >
+                            <a href="https://z7md.github.io/balot" className="text-blue-400 hover:text-blue-300 transition-colors my-4 " target="_blank" >
                                 View Project &rarr;
                             </a>
                         </div>
