@@ -5,10 +5,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-      <div className="max-w-3xl mx-auto px-12">
-        <div className="flex justify-between w-full items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
+
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg  relative">
+      <div className="w-full  flex justify-between items-center h-16">
+
+          <a href="#home" className="font-mono text-xl font-bold text-white ml-4">
             {" "}
             Hamad<span className="text-blue-500">.SE</span>{" "}
           </a>
@@ -20,7 +21,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             &#9776;
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 mr-4">
             <a
               href="#home"
               className="text-gray-300 hove:text-white transition-colors"
@@ -50,7 +51,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               Contact{" "}
             </a>
           </div>
-        </div>
       </div>
     </nav>
   );
