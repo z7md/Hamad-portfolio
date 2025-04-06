@@ -8,6 +8,7 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
+import { Footer } from "./components/sections/Footer";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,10 +16,9 @@ function App() {
 
   return (
     <>
-    <div className="">
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <div
-        className={`min-h-screen transition-opacity duration-700 scroll-smooth ${
+        className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
       >
@@ -28,7 +28,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
-      </div>
+        <Footer/>
       </div>
     </>
   );

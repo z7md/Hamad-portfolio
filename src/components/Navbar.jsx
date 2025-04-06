@@ -6,16 +6,16 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
   return (
 
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg  relative">
-      <div className="w-full  flex justify-between items-center h-16">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+      <div className="fixed w-full  flex justify-evenly items-center h-16">
 
-          <a href="#home" className="font-mono text-xl font-bold text-white ml-4">
+          <a href="#home" className="font-mono text-2xl font-bold text-white ml-4">
             {" "}
-            Hamad<span className="text-blue-500">.SE</span>{" "}
+            Hamad<span className="text-blue-500">.SWE</span>{" "}
           </a>
 
           <div
-            className={`w-7 h-5 relative cursor-pointer z-100 md:hidden text-2xl ${menuOpen ? "hidden" : ""}`}
+            className={`w-7 h-5 relative cursor-pointer z-100 md:hidden mb-[20px] text-3xl`}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             &#9776;
